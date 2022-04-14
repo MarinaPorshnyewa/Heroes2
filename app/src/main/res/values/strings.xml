@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LoginAndRegistration</string>
+    <string name="favorite_heroes">favorite heroes</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="authorization_email">Authorization Email</string>
+    <string name="phone">Phone</string>
+    <string name="code">Code</string>
+    <string name="get_code">Get Code</string>
+    <string name="check_code">Check Code</string>
+    <string name="registration">Registration</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_star">Enter star</string>
+    <string name="text">text</string>
+    <string name="name">Name</string>
+    <string name="films">Films</string>
+    <string name="tv_shows">TV shows</string>
+</resources>

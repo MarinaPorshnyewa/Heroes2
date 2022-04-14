@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.loginandregistration.ui.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout = "@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_disneyHeroesFragment"
+            app:destination="@id/disneyHeroesFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.loginandregistration.ui.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout = "@layout/fragment_registration">
+
+        <action
+            android:id="@+id/action_registrationFragment_to_disneyHeroesFragment"
+            app:destination="@id/disneyHeroesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disneyHeroesFragment"
+        android:name="com.example.loginandregistration.ui.heroes.DisneyHeroesFragment"
+        android:label="DisneyHeroesFragment"
+        tools:layout = "@layout/fragment_disney_heroes">
+        <action
+            android:id="@+id/action_disneyHeroesFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.loginandregistration.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite"/>
+
+</navigation>
